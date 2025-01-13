@@ -17,6 +17,9 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '17'
+    - name: Set up Maven 
+      uses: actions/setup-maven@v2 
+      with: maven-version: '3.9.2'
     - name: Build with maven
       run: mvn -B package --file pom.xml
     - name: Run tests
