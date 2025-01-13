@@ -17,7 +17,7 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '11'
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: Build with maven
+      run: mvn -B package --file pom.xml
     - name: Run tests
-      run: ./gradlew test
+      run: mvn test
