@@ -3,6 +3,7 @@ package com.mycompany.app;
 /**
  * Hello world!
  */
+// testing for github actions
 public class App {
 
     private static final String MESSAGE = "Hello World!";
